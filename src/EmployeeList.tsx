@@ -84,11 +84,11 @@ export default function EmployeeList() {
               <tr key={e.id} className="hover:bg-canvas/60 transition-colors">
                 <td className="px-5 py-3">
                   <Link to={`/funcionarios/${e.id}`} className="flex items-center gap-3">
-                    <ScanFrame size="sm">
+                    {/* <ScanFrame size="sm">
                       <div className="w-full h-full flex items-center justify-center text-white/40 text-[10px] font-mono">
                         {e.faceCount > 0 ? '✓' : '?'}
                       </div>
-                    </ScanFrame>
+                    </ScanFrame> */}
                     <div className="font-medium">{e.fullName}</div>
                   </Link>
                 </td>
@@ -112,7 +112,7 @@ export default function EmployeeList() {
                 </td>
                 <td className="px-5 py-3 text-right space-x-3 whitespace-nowrap">
                   <Link to={`/funcionarios/${e.id}`} className="text-primary hover:underline text-xs font-medium">
-                    Editar Acessos
+                    Editar
                   </Link>
                   <button
                     onClick={() => handleDelete(e.id, e.fullName)}

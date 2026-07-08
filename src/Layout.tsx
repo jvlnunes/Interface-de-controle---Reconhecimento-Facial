@@ -40,9 +40,9 @@ export default function Layout({ children }: { children: ReactNode }) {
           ))}
         </nav>
 
-        <div className="px-5 py-4 border-t border-white/10 text-[11px] text-white/35 font-mono">
+        {/* <div className="px-5 py-4 border-t border-white/10 text-[11px] text-white/35 font-mono">
           v1.0 · ambiente local
-        </div>
+        </div> */}
       </aside>
 
       <div className="flex-1 min-w-0 flex flex-col">
