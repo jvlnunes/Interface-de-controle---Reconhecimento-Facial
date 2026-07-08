@@ -53,14 +53,8 @@ export default function EmployeeList() {
       <div className="flex items-center justify-between gap-4">
         <div>
           <h1 className="font-display text-2xl font-semibold tracking-tight">Funcionários</h1>
-          <p className="text-sm text-text-muted mt-1">Gerencie acessos e o reconhecimento facial de cada pessoa.</p>
+          <p className="text-sm text-text-muted mt-1">Gerencie os acessos (portas) de cada funcionário.</p>
         </div>
-        <Link
-          to="/funcionarios/novo"
-          className="px-4 py-2.5 rounded-lg bg-primary text-white text-sm font-medium hover:bg-primary-strong transition-colors shrink-0"
-        >
-          + Novo cadastro
-        </Link>
       </div>
 
       <input
@@ -81,7 +75,7 @@ export default function EmployeeList() {
             <tr className="border-b border-line bg-canvas text-left text-xs uppercase tracking-wide text-text-muted">
               <th className="px-5 py-3 font-medium">Funcionário</th>
               <th className="px-5 py-3 font-medium">Portas Liberadas</th>
-              <th className="px-5 py-3 font-medium">Fotos</th>
+              <th className="px-5 py-3 font-medium">Fotos Base</th>
               <th className="px-5 py-3 font-medium text-right">Ações</th>
             </tr>
           </thead>
@@ -118,7 +112,7 @@ export default function EmployeeList() {
                 </td>
                 <td className="px-5 py-3 text-right space-x-3 whitespace-nowrap">
                   <Link to={`/funcionarios/${e.id}`} className="text-primary hover:underline text-xs font-medium">
-                    Editar
+                    Editar Acessos
                   </Link>
                   <button
                     onClick={() => handleDelete(e.id, e.fullName)}
